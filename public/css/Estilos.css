@@ -1,0 +1,34 @@
+#encabezado{
+    background-color: lightgrey;
+    top:0;
+
+}
+
+#titulo_encabezado{
+    position: fixed;/*tipo de posicionamiento*/
+    top:50px;/*Posicionamiento hacia abajo*/
+    left: 500px;/*Posicionamiento a la derecha*/
+    font-size: 80px;/*Tamaño de la letra*/
+    line-height: 0px;/*altura de cada linea*/
+    color: darkgreen;/*Color*/
+    font-family: 'Georgia';/*Tipo de letra*/
+
+
+
+}
+#pie{
+    position: fixed;/*tipo de posicionamiento*/
+    top:530px;
+    background-color: lightgray;
+
+}
+#titulo_pie_pagina{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+
+}
+#cuerpo_pie_pagina{
+    text-align: center;
+    color: darkslategray;
+}
