@@ -14,11 +14,20 @@
 <body>
 
     <header id="encabezado"><!--encabezado-->
-        <img id="logo" src={{asset("Imagenes/tesvb.png")}} alt="" ><!--Usar imagenes-->
-        <h1 id="titulo_encabezado">Protected File</h1><!--Titulo del encabezado-->
-        <ul class="nav justify-content-end">
-            <li class="nav-item"><a href="{{url("Administradores")}}" class="nav-link text-right text-black-50">Administrador</a></li>
-        </ul>
+
+        <div class="col-4" id="logos">
+            <img  id="logo" src={{asset("Imagenes/tesvb.png")}} alt="" ><!--Usar imagenes-->
+        </div>
+
+        <div class="col-6" id="titulos">
+            <h6 class="text-left " id="titulo_encabezado">Plataforma para la protección y gestión de datos personales de servidores publicos e instituciones educativa </h6><!--Titulo del encabezado-->
+        </div>
+
+        <div id="logins" class="">
+
+            <button id="boton" href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-minus-circle"></i></button>
+        </div>
+
     </header>
     <section class="container">
         @yield("content")

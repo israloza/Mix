@@ -1,18 +1,38 @@
+
 #encabezado{
     background-color: lightgrey;
-    top:0;
+    top:530px;
+}
+#logos{
+
 
 }
 
-#titulo_encabezado{
-    position: fixed;/*tipo de posicionamiento*/
-    top:50px;/*Posicionamiento hacia abajo*/
-    left: 500px;/*Posicionamiento a la derecha*/
-    font-size: 80px;/*Tamaño de la letra*/
-    line-height: 0px;/*altura de cada linea*/
-    color: darkgreen;/*Color*/
-    font-family: 'Georgia';/*Tipo de letra*/
+#titulos{
 
+    position: fixed;/*tipo de posicionamiento*/
+    top:2px;/*Posicionamiento hacia abajo*/
+    left: 450px;/*Posicionamiento a la derecha*/
+    font-size: 11px;/*Tamaño de la letra*/
+    line-height: 0px;/*altura de cada linea*/
+    color: black;/*Color*/
+    font-family: 'Open Sans- Sans SErif';/*Tipo de letra*/
+    text-align: center;
+}
+#logins{
+
+    position: fixed;/*tipo de posicionamiento*/
+    top:40px;/*Posicionamiento hacia abajo*/
+    left: 1200px;/*Posicionamiento a la derecha*/
+    font-size: 11px;/*Tamaño de la letra*/
+    line-height: 0px;/*altura de cada linea*/
+    color: black;/*Color*/
+    font-family: 'Open Sans- Sans SErif';/*Tipo de letra*/
+    text-align: center;
+}
+
+#titulo_encabezado{
+    text-align: center;
 
 
 }
@@ -20,6 +40,8 @@
     position: fixed;/*tipo de posicionamiento*/
     top:530px;
     background-color: lightgray;
+    text-align: center;
+
 
 }
 #titulo_pie_pagina{
