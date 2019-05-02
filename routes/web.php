@@ -17,3 +17,8 @@ Route::get('/', function () {
 Route::get("/",function (){
     return view("Template.template");
 });
+Route::resource('PersonasFisicas','PersonasFisicasController');
+
+Route::resource('Administradores','AdminstradoresController');
+
+Route::resource('PersonasMorales','PersonasMoralesController');
