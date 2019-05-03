@@ -1,7 +1,10 @@
 
 #encabezado{
-    background-color: lightgrey;
+    background-color: Window;
     top:530px;
+    width: auto;
+    height: 160px;
+
 }
 #logos{
 
@@ -22,24 +25,29 @@
 #logins{
 
     position: fixed;/*tipo de posicionamiento*/
-    top:40px;/*Posicionamiento hacia abajo*/
-    left: 1200px;/*Posicionamiento a la derecha*/
+    top:10px;/*Posicionamiento hacia abajo*/
+    left: 1300px;/*Posicionamiento a la derecha*/
     font-size: 11px;/*Tamaño de la letra*/
     line-height: 0px;/*altura de cada linea*/
     color: black;/*Color*/
     font-family: 'Open Sans- Sans SErif';/*Tipo de letra*/
     text-align: center;
-}
 
+}
+#user{
+    height: 70px;
+    width: 70px;
+}
 #titulo_encabezado{
     text-align: center;
 
 
 }
 #pie{
+    width: auto;
     position: fixed;/*tipo de posicionamiento*/
     top:530px;
-    background-color: lightgray;
+    background-color: Window;
     text-align: center;
 
 
@@ -51,6 +59,10 @@
 
 }
 #cuerpo_pie_pagina{
+
     text-align: center;
     color: darkslategray;
+}
+#boton{
+    top: 20px;
 }

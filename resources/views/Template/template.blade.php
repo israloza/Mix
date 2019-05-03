@@ -20,13 +20,14 @@
         </div>
 
         <div class="col-6" id="titulos">
-            <h6 class="text-left " id="titulo_encabezado">Plataforma para la protección y gestión de datos personales de servidores publicos e instituciones educativa </h6><!--Titulo del encabezado-->
+            <h6 class="text-center " id="titulo_encabezado">Plataforma para la protección y gestión de datos personales de servidores publicos e instituciones educativa </h6><!--Titulo del encabezado-->
         </div>
 
-        <div id="logins" class="">
+        <div id="logins" class="col-1">
+            <img  id="user" src={{asset("Imagenes/login.png")}} alt="" ><!--Usar imagenes-->
+           <!-- <button id="boton" href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-minus-circle"></i></button> -->
+            <div id="boton" class="col"><a class="btn-secondary" href="{{url("Administradores")}}">Administrador</a></div>
 
-            <button id="boton" href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-minus-circle"></i></button>
-        </div>
 
     </header>
     <section class="container">
