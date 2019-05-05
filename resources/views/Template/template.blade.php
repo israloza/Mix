@@ -15,7 +15,7 @@
 
     <header id="encabezado"><!--encabezado-->
 
-        <div class="col-4" id="logos">
+        <div class="col-3" id="logos">
             <img  id="logo" src={{asset("Imagenes/tesvb.png")}} alt="" ><!--Usar imagenes-->
         </div>
 
@@ -26,17 +26,29 @@
         <div id="logins" class="col-1">
             <img  id="user" src={{asset("Imagenes/login.png")}} alt="" ><!--Usar imagenes-->
            <!-- <button id="boton" href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-minus-circle"></i></button> -->
-            <div id="boton" class="col"><a class="btn-secondary" href="{{url("Administradores")}}">Administrador</a></div>
+            <div id="boton" class="col-12"><a class="btn-secondary" href="{{url("Administradores")}}">Administrador</a></div>
 
 
     </header>
     <section class="container">
         @yield("content")
     </section>
-    <footer id="pie">
-    <h1 id="titulo_pie_pagina">Contacto</h1>
-        <h3 id="cuerpo_pie_pagina">Dirección Km.30 de la Carretera Federal Monumento-Valle de Bravo
-        , Ejido de San Antonio de la Laguna, Valle de Bravo C.P 51200</h3>
+    <footer id="pie" class="col-12">
+
+        <div id="contacto" class="text-center"> Contactos</div>
+
+        <div id="cuerpo_pie_pagina">
+            Dirección Km.30 de la Carretera Federal Monumento-Valle de Bravo
+        , Ejido de San Antonio de la Laguna, Valle de Bravo C.P 51200
+        </div>
+        <div id="tesvb">
+            TECNOLOGICO DE ESTUDIOS SUPERIORES DE VALLE DE BRAVO
+        </div>
+        <div>
+            <span><i class="fab fa-facebook-f" href="https://es-la.facebook.com/public/Tesvb-Valle"></i></span>
+            <span><i class="fab fa-twitter" href="https://twitter.com/TESVBOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></i></span>
+
+        </div>
     </footer>
 </body>
 </html>

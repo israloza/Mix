@@ -2,7 +2,7 @@
 #encabezado{
     background-color: Window;
     top:530px;
-    width: auto;
+
     height: 160px;
 
 }
@@ -14,7 +14,7 @@
 #titulos{
 
     position: fixed;/*tipo de posicionamiento*/
-    top:2px;/*Posicionamiento hacia abajo*/
+    top:30px;/*Posicionamiento hacia abajo*/
     left: 450px;/*Posicionamiento a la derecha*/
     font-size: 11px;/*Tamaño de la letra*/
     line-height: 0px;/*altura de cada linea*/
@@ -27,7 +27,7 @@
     position: fixed;/*tipo de posicionamiento*/
     top:10px;/*Posicionamiento hacia abajo*/
     left: 1300px;/*Posicionamiento a la derecha*/
-    font-size: 11px;/*Tamaño de la letra*/
+    font-size: 13px;/*Tamaño de la letra*/
     line-height: 0px;/*altura de cada linea*/
     color: black;/*Color*/
     font-family: 'Open Sans- Sans SErif';/*Tipo de letra*/
@@ -44,20 +44,21 @@
 
 }
 #pie{
-    width: auto;
+
     position: fixed;/*tipo de posicionamiento*/
-    top:530px;
+    top:650px;
     background-color: Window;
     text-align: center;
 
-
 }
-#titulo_pie_pagina{
-    font-size: 30px;
+#tesvb{
     text-align: center;
+    font-family: "Open Sans- Sans SErif";
     color: black;
+    font-size: 13px;
 
 }
+
 #cuerpo_pie_pagina{
 
     text-align: center;
@@ -65,4 +66,10 @@
 }
 #boton{
     top: 20px;
+}
+
+#contacto{
+    text-align: center;
+    font-family: "Open Sans- Sans SErif";
+    color: black;
 }
