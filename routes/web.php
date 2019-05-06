@@ -22,3 +22,9 @@ Route::resource('PersonasFisicas','PersonasFisicasController');
 Route::resource('Administradores','AdminstradoresController');
 
 Route::resource('PersonasMorales','PersonasMoralesController');
+
+Route::resource('Logins','LoginsController');
+
+Route::resource('ModalidadesOtrosTipos','ModalidadesOtrosTiposController');
+
+Route::resource('SujetosObligados','SujetosObligadosController');

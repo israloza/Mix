@@ -40,6 +40,12 @@ class PersonasMoralesController extends Controller
             'am_rep'=>$request->am_rep,'nom_rep'=>$request->nom_rep);
         PersonasMorales::create($PersonaMoral);
         return redirect("PersonasMorales");
+
+
+        $PersonaMoral=array('razon_den_social'=>$request->razon_den_social,
+            'ap_rep'=>$request->ap_rep,'am_rep'=>$request->am_rep,'nom_rep'=>$request->nom_rep);
+        PersonasMorales::create($PersonaMoral);
+        return redirect("PersonasMorales");
     }
 
     /**

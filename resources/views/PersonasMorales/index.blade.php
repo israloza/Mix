@@ -1,5 +1,5 @@
 @extends('Template.template')
-@section('title','Personas Morales')
+@section('title','Personas Fisicas')
 @section('content')
     <h1 class="bg-primary text-white text-center">Personas Morales</h1>
     <div class="row">
@@ -9,8 +9,8 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Persona Moral</th>
-                <th>Raza o denominacion social</th>
+                <th>Id Personas morales</th>
+                <th>Razón o denominación social</th>
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
                 <th>Nombre</th>
@@ -19,7 +19,7 @@
                 @foreach($PersonasMorales as $PersonaMoral)
                     <tr>
                         <td>{{$PersonaMoral->id_personas_morales}}</td>
-                        <td><{{$PersonaMoral->razon_den_social}}/td>
+                        <td>{{$PersonaMoral->razon_den_social}}</td>
                         <td>{{$PersonaMoral->ap_rep}}</td>
                         <td>{{$PersonaMoral->am_rep}}</td>
                         <td>{{$PersonaMoral->nom_rep}}</td>
