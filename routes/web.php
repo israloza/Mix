@@ -28,3 +28,7 @@ Route::resource('Logins','LoginsController');
 Route::resource('ModalidadesOtrosTipos','ModalidadesOtrosTiposController');
 
 Route::resource('SujetosObligados','SujetosObligadosController');
+
+Route::resource('Municipios','MunicipiosController');
+
+Route::resource('InformacionesSolicitadas','InformacionesSolicitadasController');

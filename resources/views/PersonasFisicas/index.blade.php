@@ -1,4 +1,4 @@
-@extends('Template.template')
+@extends('Administradores.index')
 @section('title','Personas Fisicas')
 @section('content')
     <h1 class="bg-primary text-white text-center">Personas Fisicas</h1>
