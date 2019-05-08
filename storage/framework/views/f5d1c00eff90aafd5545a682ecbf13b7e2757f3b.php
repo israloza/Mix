@@ -13,6 +13,8 @@
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
                 <th>Nombre</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
                 </thead>
                 <tbody>
                 <?php $__currentLoopData = $PersonasMorales; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $PersonaMoral): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -22,6 +24,16 @@
                         <td><?php echo e($PersonaMoral->ap_rep); ?></td>
                         <td><?php echo e($PersonaMoral->am_rep); ?></td>
                         <td><?php echo e($PersonaMoral->nom_rep); ?></td>
+                        <td>
+                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        </td>
+                        <td>
+                            <form action="" method="post">
+                                <?php echo csrf_field(); ?>
+                                <?php echo method_field('DELETE'); ?>
+                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </td>
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>

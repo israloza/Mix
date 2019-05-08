@@ -13,6 +13,8 @@
                 <th>Lugar</th>
                 <th>Fecha</th>
                 <th>Hora</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
                 </thead>
                 <tbody>
                 @foreach($SujetosObligados as $SujetoObligado)
@@ -21,6 +23,16 @@
                         <td>{{$SujetoObligado->lugar}}</td>
                         <td>{{$SujetoObligado->fecha}}</td>
                         <td>{{$SujetoObligado->hora}}</td>
+                        <td>
+                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        </td>
+                        <td>
+                            <form action="" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>

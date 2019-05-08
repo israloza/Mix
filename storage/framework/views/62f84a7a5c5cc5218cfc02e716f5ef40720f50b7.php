@@ -12,6 +12,8 @@
                 <th>Lugar</th>
                 <th>Fecha</th>
                 <th>Hora</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
                 </thead>
                 <tbody>
                 <?php $__currentLoopData = $SujetosObligados; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $SujetoObligado): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -20,6 +22,16 @@
                         <td><?php echo e($SujetoObligado->lugar); ?></td>
                         <td><?php echo e($SujetoObligado->fecha); ?></td>
                         <td><?php echo e($SujetoObligado->hora); ?></td>
+                        <td>
+                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        </td>
+                        <td>
+                            <form action="" method="post">
+                                <?php echo csrf_field(); ?>
+                                <?php echo method_field('DELETE'); ?>
+                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </td>
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>

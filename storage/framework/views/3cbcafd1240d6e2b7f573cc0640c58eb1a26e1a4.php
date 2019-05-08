@@ -14,6 +14,8 @@
                 <th>Apellido Materno</th>
                 <th>Contraeña</th>
                 <th>Correo</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
                 </thead>
                 <tbody>
                 <?php $__currentLoopData = $Logins; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $Login): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -24,6 +26,16 @@
                         <td><?php echo e($Login->am); ?></td>
                         <td><?php echo e($Login->contraseña); ?></td>
                         <td><?php echo e($Login->correo); ?></td>
+                        <td>
+                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        </td>
+                        <td>
+                            <form action="" method="post">
+                                <?php echo csrf_field(); ?>
+                                <?php echo method_field('DELETE'); ?>
+                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </td>
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>

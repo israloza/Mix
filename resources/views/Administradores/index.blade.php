@@ -1,6 +1,7 @@
 @extends('Template.template')
 @section('title','Administrador')
 @section('content')
+<header>
     <h1 class="bg-primary text-white text-center">Administrador</h1>
     <div class="row">
         <div class="col-12">
@@ -17,6 +18,7 @@
         </ul>
         </div>
     </div>
+</header>
     <section class="container">
         @yield("content")
     </section>

@@ -31,10 +31,11 @@
 
     </header>
     <section class="container">
+        @include('flash::message')
         @yield("content")
     </section>
 
-    <footer id="pie" class="col-12">
+    <!--<footer id="pie" class="col-12">
 
         <div id="Gobierno">
             <p>Gobierno del Estado de México<br>Secretaría de Educación
@@ -57,6 +58,6 @@
         <div>
 
         </div>
-    </footer>
+    </footer>-->
 </body>
 </html>

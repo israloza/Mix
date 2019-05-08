@@ -11,6 +11,8 @@
                 <thead>
                 <th>Id Información Solicitada</th>
                 <th>Informacion</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
 
                 </thead>
                 <tbody>
@@ -18,6 +20,16 @@
                     <tr>
                         <td>{{$InformacionesSolicitada->id_informaciones_solicitadas}}</td>
                         <td>{{$InformacionesSolicitada->descripcion}}</td>
+                        <td>
+                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        </td>
+                        <td>
+                            <form action="" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>

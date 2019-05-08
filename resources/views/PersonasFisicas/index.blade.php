@@ -13,6 +13,8 @@
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
                 <th>Nombre</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
                 </thead>
                 <tbody>
                 @foreach($PersonasFisicas as $PersonaFisica)
@@ -21,6 +23,12 @@
                         <td>{{$PersonaFisica->ap}}</td>
                         <td>{{$PersonaFisica->am}}</td>
                         <td>{{$PersonaFisica->nombre}}</td>
+                        <td>
+                            <a href="{{route('PersonasFisicas.edit',$PersonaFisica->id_personas_fisicas)}}" onclick="return confirm('¿Seguro que deseas modificarlo?')" class="btn btn-outline-primary" name="actualizar"><i  class="fas fa-pen-alt"></i></a>
+                        </td>
+                        <td>
+                            <a href="{{route('PersonasFisicas.destroy',$PersonaFisica->id_personas_fisicas)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></a>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>

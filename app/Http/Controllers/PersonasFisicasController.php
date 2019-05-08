@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\PersonasFisicas;
 use Illuminate\Http\Request;
+use Laracasts\Flash\Flash;
+use Symfony\Component\HttpFoundation\Session\Flash\FlashBag;
 
 class PersonasFisicasController extends Controller
 {
@@ -39,6 +41,7 @@ class PersonasFisicasController extends Controller
         $PersonaFisica=array('ap'=>$request->ap,
             'am'=>$request->am,'nombre'=>$request->nombre);
         PersonasFisicas::create($PersonaFisica);
+        Flash::success('El usuario: '.$request->nombre. ' se ha registrado de forma exitosa');
         return redirect("PersonasFisicas");
     }
 
@@ -50,7 +53,7 @@ class PersonasFisicasController extends Controller
      */
     public function show(PersonasFisicas $personasFisicas)
     {
-        //
+
     }
 
     /**
@@ -59,9 +62,11 @@ class PersonasFisicasController extends Controller
      * @param  \App\PersonasFisicas  $personasFisicas
      * @return \Illuminate\Http\Response
      */
-    public function edit(PersonasFisicas $personasFisicas)
+    public function edit($id)
     {
-        //
+
+        $PersonasFisica=PersonasFisicas::find($id);
+        return view('PersonasFisicas.edit', compact('PersonasFisica'));
     }
 
     /**
@@ -71,9 +76,10 @@ class PersonasFisicasController extends Controller
      * @param  \App\PersonasFisicas  $personasFisicas
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PersonasFisicas $personasFisicas)
+    public function update(Request $request, PersonasFisicas $PersonasFisica)
     {
-        //
+        $PersonasFisica->update($request->all());
+        return redirect("PersonasFisicas");
     }
 
     /**
@@ -82,8 +88,11 @@ class PersonasFisicasController extends Controller
      * @param  \App\PersonasFisicas  $personasFisicas
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PersonasFisicas $personasFisicas)
+    public function destroy($id)
     {
-        //
+        $PersonasFisica=PersonasFisicas::find($id);
+        $PersonasFisica->delete();
+        Flash::error('El usuario '. $PersonasFisica->nombre .' ha sido Eliminado de forma exitosa.');
+        return redirect("PersonasFisicas");
     }
 }

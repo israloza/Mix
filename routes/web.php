@@ -18,6 +18,10 @@ Route::get("/",function (){
     return view("Template.template");
 });
 Route::resource('PersonasFisicas','PersonasFisicasController');
+Route::get('PersonasFisicas/{id}/destroy',[
+    'uses' => 'PersonasFisicasController@destroy',
+    'as' => 'PersonasFisicas.destroy'
+    ]);
 
 Route::resource('Administradores','AdminstradoresController');
 
