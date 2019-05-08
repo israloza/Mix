@@ -32,3 +32,7 @@ Route::resource('SujetosObligados','SujetosObligadosController');
 Route::resource('Municipios','MunicipiosController');
 
 Route::resource('InformacionesSolicitadas','InformacionesSolicitadasController');
+
+Route::resource('ModalidadesEntrega','ModalidadesEntregaController');
+
+Route::resource('DatosPersonales','DatosPersonalesController');

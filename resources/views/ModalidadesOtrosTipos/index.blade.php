@@ -17,7 +17,7 @@
                 @foreach($ModalidadesOtrosTipos as $ModalidadOtroTipo)
                     <tr>
                         <td>{{$ModalidadOtroTipo->id_modalidades_otros_tipos}}</td>
-                        <td>{{$ModalidadOtroTipo->descripción}}</td>
+                        <td>{{$ModalidadOtroTipo->descripcion}}</td>
 
                     </tr>
                 @endforeach

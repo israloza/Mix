@@ -43,12 +43,14 @@
 
 
 }
+
 #pie{
 
     position: fixed;/*tipo de posicionamiento*/
-    top:650px;
-    background-color: Window;
-    text-align: center;
+    top:535px;
+    background-color: window;
+
+
 
 }
 #tesvb{
@@ -57,19 +59,31 @@
     color: black;
     font-size: 13px;
 
+
 }
 
-#cuerpo_pie_pagina{
+#Gobierno{
+
 
     text-align: center;
+    background-color: window;
+    font-family: "Open Sans- Sans SErif";
     color: darkslategray;
+    column-count: 2;
+    column-width: 10em;
+    font-size: 13px;
+
+
 }
 #boton{
     top: 20px;
 }
 
-#contacto{
+#derechos{
     text-align: center;
     font-family: "Open Sans- Sans SErif";
+    background-color: window;
     color: black;
+    font-size: 13px;
+
 }
