@@ -45,23 +45,12 @@ class PersonasFisicasController extends Controller
         return redirect("PersonasFisicas");
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\PersonasFisicas  $personasFisicas
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(PersonasFisicas $personasFisicas)
     {
 
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\PersonasFisicas  $personasFisicas
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
 

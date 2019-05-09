@@ -58,9 +58,10 @@ class InformacionesSolicitadasController extends Controller
      * @param  \App\InformacionesSolicitadas  $informacionesSolicitadas
      * @return \Illuminate\Http\Response
      */
-    public function edit(InformacionesSolicitadas $informacionesSolicitadas)
+    public function edit($id)
     {
-        //
+        $InformacionSolicitada=InformacionesSolicitadas::find($id);
+        return view('InformacionesSolicitadas.edit', compact('InformacionSolicitada'));
     }
 
     /**
@@ -70,9 +71,10 @@ class InformacionesSolicitadasController extends Controller
      * @param  \App\InformacionesSolicitadas  $informacionesSolicitadas
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, InformacionesSolicitadas $informacionesSolicitadas)
+    public function update(Request $request, InformacionesSolicitadas $InformacionSolicitada)
     {
-        //
+        $InformacionSolicitada->update($request->all());
+        return redirect("InformacionesSolicitadas");
     }
 
     /**
@@ -81,8 +83,10 @@ class InformacionesSolicitadasController extends Controller
      * @param  \App\InformacionesSolicitadas  $informacionesSolicitadas
      * @return \Illuminate\Http\Response
      */
-    public function destroy(InformacionesSolicitadas $informacionesSolicitadas)
+    public function destroy($id)
     {
-        //
+        $InformacionSolicitada=InformacionesSolicitadas::find($id);
+        $InformacionSolicitada->delete();
+        return redirect("InformacionesSolicitadas");
     }
 }

@@ -26,6 +26,10 @@ Route::get('PersonasFisicas/{id}/destroy',[
 Route::resource('Administradores','AdminstradoresController');
 
 Route::resource('PersonasMorales','PersonasMoralesController');
+Route::get('PersonasMorales/{id}/destroy',[
+    'uses' => 'PersonasMoralesController@destroy',
+    'as' => 'PersonasMorales.destroy'
+]);
 
 Route::resource('Logins','LoginsController');
 
@@ -34,9 +38,25 @@ Route::resource('ModalidadesOtrosTipos','ModalidadesOtrosTiposController');
 Route::resource('SujetosObligados','SujetosObligadosController');
 
 Route::resource('Municipios','MunicipiosController');
+Route::get('Municipios/{id}/destroy',[
+    'uses' => 'MunicipiosController@destroy',
+    'as' => 'Municipios.destroy'
+]);
 
 Route::resource('InformacionesSolicitadas','InformacionesSolicitadasController');
+Route::get('InformacionesSolicitadas/{id}/destroy',[
+    'uses' => 'InformacionesSolicitadasController@destroy',
+    'as' => 'InformacionesSolicitadas.destroy'
+]);
 
 Route::resource('ModalidadesEntrega','ModalidadesEntregaController');
+Route::get('ModalidadesEntrega/{id}/destroy',[
+    'uses' => 'ModalidadesEntregaController@destroy',
+    'as' => 'ModalidadesEntrega.destroy'
+]);
 
 Route::resource('DatosPersonales','DatosPersonalesController');
+Route::get('DatosPersonales/{id}/destroy',[
+    'uses' => 'DatosPersonalesController@destroy',
+    'as' => 'DatosPersonales.destroy'
+]);

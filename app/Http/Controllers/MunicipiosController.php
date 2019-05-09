@@ -58,9 +58,10 @@ class MunicipiosController extends Controller
      * @param  \App\Municipios  $municipios
      * @return \Illuminate\Http\Response
      */
-    public function edit(Municipios $municipios)
+    public function edit($id)
     {
-        //
+        $Municipio=Municipios::find($id);
+        return view('Municipios.edit', compact('Municipio'));
     }
 
     /**
@@ -70,9 +71,10 @@ class MunicipiosController extends Controller
      * @param  \App\Municipios  $municipios
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Municipios $municipios)
+    public function update(Request $request, Municipios $Municipio)
     {
-        //
+        $Municipio->update($request->all());
+        return redirect("Municipios");
     }
 
     /**
@@ -81,8 +83,10 @@ class MunicipiosController extends Controller
      * @param  \App\Municipios  $municipios
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Municipios $municipios)
+    public function destroy($id)
     {
-        //
+        $Municipio=Municipios::find($id);
+        $Municipio->delete();
+        return redirect("Municipios");
     }
 }

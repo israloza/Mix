@@ -36,11 +36,6 @@ class PersonasMoralesController extends Controller
      */
     public function store(Request $request)
     {
-        $PersonaMoral=array('razon_den_social'=>$request->razon_den_social,'ap_rep'=>$request->ap_rep,
-            'am_rep'=>$request->am_rep,'nom_rep'=>$request->nom_rep);
-        PersonasMorales::create($PersonaMoral);
-        return redirect("PersonasMorales");
-
 
         $PersonaMoral=array('razon_den_social'=>$request->razon_den_social,
             'ap_rep'=>$request->ap_rep,'am_rep'=>$request->am_rep,'nom_rep'=>$request->nom_rep);
@@ -57,17 +52,15 @@ class PersonasMoralesController extends Controller
     public function show(PersonasMorales $personasMorales)
     {
         //
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\PersonasMorales  $personasMorales
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(PersonasMorales $personasMorales)
+
+    public function edit($id)
     {
         //
+        $PersonasMoral=PersonasMorales::find($id);
+        return view('PersonasMorales.edit', compact('PersonasMoral'));
     }
 
     /**
@@ -77,9 +70,12 @@ class PersonasMoralesController extends Controller
      * @param  \App\PersonasMorales  $personasMorales
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PersonasMorales $personasMorales)
+    public function update(Request $request, PersonasMorales $PersonasMoral)
     {
-        //
+
+        $PersonasMoral->update($request->all());
+        return redirect("PersonasMorales");
+
     }
 
     /**
@@ -88,8 +84,14 @@ class PersonasMoralesController extends Controller
      * @param  \App\PersonasMorales  $personasMorales
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PersonasMorales $personasMorales)
+    public function destroy($id)
     {
         //
+        $PersonasMoral=PersonasMorales::find($id);
+        $PersonasMoral->delete();
+
+        return redirect("PersonasMorales");
+
+
     }
 }

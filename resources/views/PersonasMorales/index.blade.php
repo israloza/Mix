@@ -25,15 +25,12 @@
                         <td>{{$PersonaMoral->ap_rep}}</td>
                         <td>{{$PersonaMoral->am_rep}}</td>
                         <td>{{$PersonaMoral->nom_rep}}</td>
-                        <td>
-                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        <td class="table-success">
+                            <a href="{{route('PersonasMorales.edit',$PersonaMoral->id_personas_morales)}}" onclick="return confirm('¿Seguro que deseas modificarlo?')" class="btn btn-outline-primary" name="actualizar"><i  class="fas fa-pen-alt"></i></a>
                         </td>
                         <td>
-                            <form action="" method="post">
-                                @csrf
-                                @method('DELETE')
-                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
-                            </form>
+                        <td class="table-success">
+                            <a href="{{route('PersonasMorales.destroy',$PersonaMoral->id_personas_morales)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 @endforeach

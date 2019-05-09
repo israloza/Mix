@@ -59,9 +59,11 @@ class DatosPersonalesController extends Controller
      * @param  \App\DatosPersonales  $datosPersonales
      * @return \Illuminate\Http\Response
      */
-    public function edit(DatosPersonales $datosPersonales)
+    public function edit($id)
     {
         //
+        $DatosPersonal=DatosPersonales::find($id);
+        return view('DatosPersonales.edit', compact('DatosPersonal'));
     }
 
     /**
@@ -71,9 +73,12 @@ class DatosPersonalesController extends Controller
      * @param  \App\DatosPersonales  $datosPersonales
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, DatosPersonales $datosPersonales)
+
+    public function update(Request $request, DatosPersonales $DatosPersonal)
     {
         //
+        $DatosPersonal->update($request->all());
+        return redirect("DatosPersonales");
     }
 
     /**
@@ -82,8 +87,11 @@ class DatosPersonalesController extends Controller
      * @param  \App\DatosPersonales  $datosPersonales
      * @return \Illuminate\Http\Response
      */
-    public function destroy(DatosPersonales $datosPersonales)
+    public function destroy($id)
     {
-        //
+        $DatosPersonal=DatosPersonales::find($id);
+        $DatosPersonal->delete();
+
+        return redirect("DatosPersonales");
     }
 }

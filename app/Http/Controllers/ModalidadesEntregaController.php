@@ -14,7 +14,7 @@ class ModalidadesEntregaController extends Controller
      */
     public function index()
     {
-        $ModalidadesEntrega=ModalidadesEntrega::orderby('id_modalidades_entregas')->get();
+        $ModalidadesEntrega=ModalidadesEntrega::orderby('id_modalidades_entrega')->get();
         return view("ModalidadesEntrega.index",compact('ModalidadesEntrega'));
     }
 
@@ -59,9 +59,10 @@ class ModalidadesEntregaController extends Controller
      * @param  \App\ModalidadesEntrega  $modalidadesEntrega
      * @return \Illuminate\Http\Response
      */
-    public function edit(ModalidadesEntrega $modalidadesEntrega)
+    public function edit($id)
     {
-        //
+        $ModalidadEntrega=ModalidadesEntrega::find($id);
+        return view('ModalidadesEntrega.edit', compact('ModalidadEntrega'));
     }
 
     /**
@@ -71,9 +72,10 @@ class ModalidadesEntregaController extends Controller
      * @param  \App\ModalidadesEntrega  $modalidadesEntrega
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ModalidadesEntrega $modalidadesEntrega)
+    public function update(Request $request, ModalidadesEntrega $ModalidadEntrega)
     {
-        //
+        $ModalidadEntrega->update($request->all());
+        return redirect("ModalidadesEntrega");
     }
 
     /**
@@ -82,8 +84,10 @@ class ModalidadesEntregaController extends Controller
      * @param  \App\ModalidadesEntrega  $modalidadesEntrega
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ModalidadesEntrega $modalidadesEntrega)
+    public function destroy($id)
     {
-        //
+        $ModalidadEntrega=ModalidadesEntrega::find($id);
+        $ModalidadEntrega->delete();
+        return redirect("ModalidadesEntrega");
     }
 }
