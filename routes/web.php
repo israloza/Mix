@@ -32,10 +32,23 @@ Route::get('PersonasMorales/{id}/destroy',[
 ]);
 
 Route::resource('Logins','LoginsController');
+Route::get('Logins/{id}/destroy',[
+    'uses' => 'LoginsController@destroy',
+    'as' => 'Logins.destroy'
+]);
+
 
 Route::resource('ModalidadesOtrosTipos','ModalidadesOtrosTiposController');
+Route::get('ModalidadesOtrosTipos/{id}/destroy',[
+    'uses' => 'ModalidadesOtrosTiposController@destroy',
+    'as' => 'ModalidadesOtrosTipos.destroy'
+]);
 
 Route::resource('SujetosObligados','SujetosObligadosController');
+Route::get('SujetosObligados/{id}/destroy',[
+    'uses' => 'SujetosObligadosController@destroy',
+    'as' => 'SujetosObligados.destroy'
+]);
 
 Route::resource('Municipios','MunicipiosController');
 Route::get('Municipios/{id}/destroy',[

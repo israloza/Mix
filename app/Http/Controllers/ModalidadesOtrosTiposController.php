@@ -61,9 +61,10 @@ class ModalidadesOtrosTiposController extends Controller
      * @param  \App\ModalidadesOtrosTipos  $modalidadesOtrosTipos
      * @return \Illuminate\Http\Response
      */
-    public function edit(ModalidadesOtrosTipos $modalidadesOtrosTipos)
+    public function edit($id)
     {
-        //
+        $ModalidadesOtroTipo=ModalidadesOtrosTipos::find($id);
+        return view('ModalidadesOtrosTipos.edit', compact('ModalidadesOtroTipo'));
     }
 
     /**
@@ -73,9 +74,10 @@ class ModalidadesOtrosTiposController extends Controller
      * @param  \App\ModalidadesOtrosTipos  $modalidadesOtrosTipos
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ModalidadesOtrosTipos $modalidadesOtrosTipos)
+    public function update(Request $request, ModalidadesOtrosTipos $ModalidadesOtroTipo)
     {
-        //
+        $ModalidadesOtroTipo->update($request->all());
+        return redirect("ModalidadesOtrosTipos");
     }
 
     /**
@@ -84,8 +86,10 @@ class ModalidadesOtrosTiposController extends Controller
      * @param  \App\ModalidadesOtrosTipos  $modalidadesOtrosTipos
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ModalidadesOtrosTipos $modalidadesOtrosTipos)
+    public function destroy($id)
     {
-        //
+        $ModalidadesOtroTipo=ModalidadesOtrosTipos::find($id);
+        $ModalidadesOtroTipo->delete();
+        return redirect("ModalidadesOtrosTipos");
     }
 }

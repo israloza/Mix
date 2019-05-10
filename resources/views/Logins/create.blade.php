@@ -24,8 +24,8 @@
                     <label for="exampleInputPassword1">Contraseña</label>
                     <input type="text" class="form-control" name="contraseña" placeholder="Contraseña">
 
-                    <label for="exampleInputPassword1">Correo</label>
-                    <input type="text" class="form-control" name="correo" placeholder="Correo">
+                    <label for="exampleInputPassword1">Correo Electronico</label>
+                    <input type="text" class="form-control" name="correo" placeholder="Correo Electronico">
 
                 </div>
                 <button type="submit" class="btn-primary">Aceptar</button>

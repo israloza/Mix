@@ -19,19 +19,16 @@
                 <tbody>
                 @foreach($SujetosObligados as $SujetoObligado)
                     <tr>
-                        <td>{{$SujetoObligado->id_sujetos_obligados}}</td>
-                        <td>{{$SujetoObligado->lugar}}</td>
-                        <td>{{$SujetoObligado->fecha}}</td>
-                        <td>{{$SujetoObligado->hora}}</td>
-                        <td>
-                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        <td class="table-success">{{$SujetoObligado->id_sujetos_obligados}}</td>
+                        <td class="table-success">{{$SujetoObligado->lugar}}</td>
+                        <td class="table-success">{{$SujetoObligado->fecha}}</td>
+                        <td class="table-success">{{$SujetoObligado->hora}}</td>
+
+                        <td class="table-success">
+                            <a href="{{route('SujetosObligados.edit',$SujetoObligado->id_sujetos_obligados)}}" onclick="return confirm('¿Seguro que deseas modificarlo?')" class="btn btn-outline-primary" name="actualizar"><i  class="fas fa-pen-alt"></i></a>
                         </td>
-                        <td>
-                            <form action="" method="post">
-                                @csrf
-                                @method('DELETE')
-                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
-                            </form>
+                        <td class="table-success">
+                            <a href="{{route('SujetosObligados.destroy',$SujetoObligado->id_sujetos_obligados)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 @endforeach

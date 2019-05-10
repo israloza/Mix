@@ -9,7 +9,7 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th class="table-active">Id Persona Fisica</th>
+                <!--<th class="table-active">Id Persona Fisica</th>-->
                 <th class="table-active">Apellido Paterno</th>
                 <th class="table-active">Apellido Materno</th>
                 <th class="table-active">Nombre</th>
@@ -19,7 +19,7 @@
                 <tbody>
                 @foreach($PersonasFisicas as $PersonaFisica)
                     <tr>
-                        <td class="table-success">{{$PersonaFisica->id_personas_fisicas}}</td>
+                        <!--<td class="table-success">{{$PersonaFisica->id_personas_fisicas}}</td>-->
                         <td class="table-success">{{$PersonaFisica->ap}}</td>
                         <td class="table-success">{{$PersonaFisica->am}}</td>
                         <td class="table-success">{{$PersonaFisica->nombre}}</td>

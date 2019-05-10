@@ -66,9 +66,10 @@ class LoginsController extends Controller
      * @param  \App\Logins  $logins
      * @return \Illuminate\Http\Response
      */
-    public function edit(Logins $logins)
+    public function edit($id)
     {
-        //
+        $Login=Logins::find($id);
+        return view('Logins.edit', compact('Login'));
     }
 
     /**
@@ -78,9 +79,10 @@ class LoginsController extends Controller
      * @param  \App\Logins  $logins
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Logins $logins)
+    public function update(Request $request, Logins $Login)
     {
-        //
+        $Login->update($request->all());
+        return redirect("Logins");
     }
 
     /**
@@ -89,8 +91,10 @@ class LoginsController extends Controller
      * @param  \App\Logins  $logins
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Logins $logins)
+    public function destroy($id)
     {
-        //
+        $Login=Logins::find($id);
+        $Login->delete();
+        return redirect("Logins");
     }
 }

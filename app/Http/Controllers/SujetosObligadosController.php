@@ -62,9 +62,10 @@ class SujetosObligadosController extends Controller
      * @param  \App\SujetosObligados  $sujetosObligados
      * @return \Illuminate\Http\Response
      */
-    public function edit(SujetosObligados $sujetosObligados)
+    public function edit($id)
     {
-        //
+        $SujetosObligado=SujetosObligados::find($id);
+        return view('SujetosObligados.edit', compact('SujetosObligado'));
     }
 
     /**
@@ -74,9 +75,10 @@ class SujetosObligadosController extends Controller
      * @param  \App\SujetosObligados  $sujetosObligados
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SujetosObligados $sujetosObligados)
+    public function update(Request $request, SujetosObligados $SujetosObligado)
     {
-        //
+        $SujetosObligado->update($request->all());
+        return redirect("SujetosObligados");
     }
 
     /**
@@ -85,8 +87,10 @@ class SujetosObligadosController extends Controller
      * @param  \App\SujetosObligados  $sujetosObligados
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SujetosObligados $sujetosObligados)
+    public function destroy($id)
     {
-        //
+        $SujetosObligado=SujetosObligados::find($id);
+        $SujetosObligado->delete();
+        return redirect("SujetosObligados");
     }
 }
