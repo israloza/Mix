@@ -9,7 +9,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th class="table-active">Id Datos Personales</th>
                 <th class="table-active">Descripcion</th>
                 <th class="table-active">Actualizar</th>
                 <th class="table-active">Eliminar</th>
@@ -17,7 +16,6 @@
                 <tbody>
                 @foreach($DatosPersonales as $DatoPersonal)
                     <tr>
-                        <td class="table-success">{{$DatoPersonal->id_datos_personales}}</td>
                         <td class="table-success">{{$DatoPersonal->descripcion}}</td>
 
                         <td class="table-success">

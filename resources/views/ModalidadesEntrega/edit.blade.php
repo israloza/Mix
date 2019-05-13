@@ -7,7 +7,7 @@
     </div>
     <div class="row">
         <div class="col-4 offset-4">
-            <form method="post" action="{{route("ModalidadesEntrega.update",$ModalidadEntrega->id_modalidades_entrega)}}">
+            <form method="post" action="{{route("ModalidadesEntrega.update",$ModalidadEntrega->id_modalidades_entregas)}}">
                 @csrf
                 @method("PUT")
                 <div class="form-group">

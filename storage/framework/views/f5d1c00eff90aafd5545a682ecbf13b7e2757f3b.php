@@ -8,7 +8,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Personas morales</th>
                 <th>Razón o denominación social</th>
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
@@ -19,20 +18,16 @@
                 <tbody>
                 <?php $__currentLoopData = $PersonasMorales; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $PersonaMoral): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <tr>
-                        <td><?php echo e($PersonaMoral->id_personas_morales); ?></td>
                         <td><?php echo e($PersonaMoral->razon_den_social); ?></td>
                         <td><?php echo e($PersonaMoral->ap_rep); ?></td>
                         <td><?php echo e($PersonaMoral->am_rep); ?></td>
                         <td><?php echo e($PersonaMoral->nom_rep); ?></td>
-                        <td>
-                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        <td class="table-success">
+                            <a href="<?php echo e(route('PersonasMorales.edit',$PersonaMoral->id_personas_morales)); ?>" onclick="return confirm('¿Seguro que deseas modificarlo?')" class="btn btn-outline-primary" name="actualizar"><i  class="fas fa-pen-alt"></i></a>
                         </td>
                         <td>
-                            <form action="" method="post">
-                                <?php echo csrf_field(); ?>
-                                <?php echo method_field('DELETE'); ?>
-                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
-                            </form>
+                        <td class="table-success">
+                            <a href="<?php echo e(route('PersonasMorales.destroy',$PersonaMoral->id_personas_morales)); ?>" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

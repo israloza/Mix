@@ -9,7 +9,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Login</th>
                 <th>Nombre</th>
                 <th>Apellido Parterno</th>
                 <th>Apellido Materno</th>
@@ -21,7 +20,6 @@
                 <tbody>
                 @foreach($Logins as $Login)
                     <tr>
-                        <td class="table-success">{{$Login->id_login}}</td>
                         <td class="table-success">{{$Login->nombre}}</td>
                         <td class="table-success">{{$Login->ap}}</td>
                         <td class="table-success">{{$Login->am}}</td>

@@ -9,7 +9,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Información Solicitada</th>
                 <th>Informacion</th>
                 <th>Actualizar</th>
                 <th>Eliminar</th>
@@ -17,7 +16,6 @@
                 <tbody>
                 @foreach($InformacionesSolicitadas as $InformacionSolicitada)
                     <tr>
-                        <td class="table-success">{{$InformacionSolicitada->id_informaciones_solicitadas}}</td>
                         <td class="table-success">{{$InformacionSolicitada->descripcion}}</td>
 
                         <td class="table-success">

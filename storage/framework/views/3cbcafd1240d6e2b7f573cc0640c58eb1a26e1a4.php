@@ -8,34 +8,28 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Login</th>
                 <th>Nombre</th>
                 <th>Apellido Parterno</th>
                 <th>Apellido Materno</th>
                 <th>Contraeña</th>
-                <th>Correo</th>
+                <th>Correo Electronico</th>
                 <th>Actualizar</th>
                 <th>Eliminar</th>
                 </thead>
                 <tbody>
                 <?php $__currentLoopData = $Logins; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $Login): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <tr>
-                        <td><?php echo e($Login->id_login); ?></td>
-                        <td><?php echo e($Login->nombre); ?></td>
-                        <td><?php echo e($Login->ap); ?></td>
-                        <td><?php echo e($Login->am); ?></td>
-                        <td><?php echo e($Login->contraseña); ?></td>
-                        <td><?php echo e($Login->correo); ?></td>
-                        <td>
-                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        <td class="table-success"><?php echo e($Login->nombre); ?></td>
+                        <td class="table-success"><?php echo e($Login->ap); ?></td>
+                        <td class="table-success"><?php echo e($Login->am); ?></td>
+                        <td class="table-success"><?php echo e($Login->contraseña); ?></td>
+                        <td class="table-success"><?php echo e($Login->correo); ?></td>
+
+                        <td class="table-success">
+                            <a href="<?php echo e(route('Logins.edit',$Login->id_login)); ?>" onclick="return confirm('¿Seguro que deseas modificarlo?')" class="btn btn-outline-primary" name="actualizar"><i  class="fas fa-pen-alt"></i></a>
                         </td>
-                        <td>
-                            <form action="" method="post">
-                                <?php echo csrf_field(); ?>
-                                <?php echo method_field('DELETE'); ?>
-                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
-                            </form>
-                        </td>
+                        <td class="table-success">
+                            <a href="<?php echo e(route('Logins.destroy',$Login->id_login)); ?>" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i><Login
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>

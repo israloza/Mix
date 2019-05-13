@@ -8,7 +8,7 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th class="table-active">Id Persona Fisica</th>
+                <!--<th class="table-active">Id Persona Fisica</th>-->
                 <th class="table-active">Apellido Paterno</th>
                 <th class="table-active">Apellido Materno</th>
                 <th class="table-active">Nombre</th>
@@ -18,7 +18,7 @@
                 <tbody>
                 <?php $__currentLoopData = $PersonasFisicas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $PersonaFisica): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <tr>
-                        <td class="table-success"><?php echo e($PersonaFisica->id_personas_fisicas); ?></td>
+                        <!--<td class="table-success"><?php echo e($PersonaFisica->id_personas_fisicas); ?></td>-->
                         <td class="table-success"><?php echo e($PersonaFisica->ap); ?></td>
                         <td class="table-success"><?php echo e($PersonaFisica->am); ?></td>
                         <td class="table-success"><?php echo e($PersonaFisica->nombre); ?></td>

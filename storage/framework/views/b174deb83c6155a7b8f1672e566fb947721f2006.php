@@ -8,25 +8,20 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Modalidad Otro Tipo</th>
                 <th>Descripción</th>
                 <th>Actualizar</th>
                 <th>Eliminar</th>
                 </thead>
                 <tbody>
-                <?php $__currentLoopData = $ModalidadesOtrosTipos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $ModalidadOtroTipo): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <?php $__currentLoopData = $ModalidadesOtrosTipos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $ModaliadOtroTipo): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <tr>
-                        <td><?php echo e($ModalidadOtroTipo->id_modalidades_otros_tipos); ?></td>
-                        <td><?php echo e($ModalidadOtroTipo->descripcion); ?></td>
-                        <td>
-                            <a href="" class="btn btn-outline-primary" name="actualizar"><i class="fas fa-pen-alt"></i></a>
+                        <td class="table-success"><?php echo e($ModaliadOtroTipo->descripcion); ?></td>
+
+                        <td class="table-success">
+                            <a href="<?php echo e(route('ModalidadesOtrosTipos.edit',$ModaliadOtroTipo->id_modalidades_otros_tipos)); ?>" onclick="return confirm('¿Seguro que deseas modificarlo?')" class="btn btn-outline-primary" name="actualizar"><i  class="fas fa-pen-alt"></i></a>
                         </td>
-                        <td>
-                            <form action="" method="post">
-                                <?php echo csrf_field(); ?>
-                                <?php echo method_field('DELETE'); ?>
-                                <button href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></button>
-                            </form>
+                        <td class="table-success">
+                            <a href="<?php echo e(route('ModalidadesOtrosTipos.destroy',$ModaliadOtroTipo->id_modalidades_otros_tipos)); ?>" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

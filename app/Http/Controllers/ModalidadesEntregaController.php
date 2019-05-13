@@ -14,7 +14,7 @@ class ModalidadesEntregaController extends Controller
      */
     public function index()
     {
-        $ModalidadesEntrega=ModalidadesEntrega::orderby('id_modalidades_entrega')->get();
+        $ModalidadesEntrega=ModalidadesEntrega::orderby('id_modalidades_entregas')->get();
         return view("ModalidadesEntrega.index",compact('ModalidadesEntrega'));
     }
 

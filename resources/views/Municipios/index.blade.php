@@ -9,7 +9,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Municipio</th>
                 <th>Descripción</th>
                 <th>Actualizar</th>
                 <th>Eliminar</th>
@@ -17,7 +16,6 @@
                 <tbody>
                 @foreach($Municipios as $Municipio)
                     <tr>
-                        <td class="table-success">{{$Municipio->id_municipios}}</td>
                         <td class="table-success">{{$Municipio->descripcion}}</td>
 
                         <td class="table-success">

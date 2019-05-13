@@ -9,7 +9,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Personas morales</th>
                 <th>Razón o denominación social</th>
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
@@ -20,7 +19,6 @@
                 <tbody>
                 @foreach($PersonasMorales as $PersonaMoral)
                     <tr>
-                        <td>{{$PersonaMoral->id_personas_morales}}</td>
                         <td>{{$PersonaMoral->razon_den_social}}</td>
                         <td>{{$PersonaMoral->ap_rep}}</td>
                         <td>{{$PersonaMoral->am_rep}}</td>

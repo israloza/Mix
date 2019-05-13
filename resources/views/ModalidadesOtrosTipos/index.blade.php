@@ -9,7 +9,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Modalidad Otro Tipo</th>
                 <th>Descripción</th>
                 <th>Actualizar</th>
                 <th>Eliminar</th>
@@ -17,7 +16,6 @@
                 <tbody>
                 @foreach($ModalidadesOtrosTipos as $ModaliadOtroTipo)
                     <tr>
-                        <td class="table-success">{{$ModaliadOtroTipo->id_modalidades_otros_tipos}}</td>
                         <td class="table-success">{{$ModaliadOtroTipo->descripcion}}</td>
 
                         <td class="table-success">

@@ -9,7 +9,6 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Sujeto Obligado</th>
                 <th>Lugar</th>
                 <th>Fecha</th>
                 <th>Hora</th>
@@ -19,7 +18,6 @@
                 <tbody>
                 @foreach($SujetosObligados as $SujetoObligado)
                     <tr>
-                        <td class="table-success">{{$SujetoObligado->id_sujetos_obligados}}</td>
                         <td class="table-success">{{$SujetoObligado->lugar}}</td>
                         <td class="table-success">{{$SujetoObligado->fecha}}</td>
                         <td class="table-success">{{$SujetoObligado->hora}}</td>
