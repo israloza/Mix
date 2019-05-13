@@ -74,10 +74,10 @@ class DatosPersonalesController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function update(Request $request, DatosPersonales $DatosPersonal)
+    public function update(Request $request, DatosPersonales $DatosPersonale)
     {
         //
-        $DatosPersonal->update($request->all());
+        $DatosPersonale->update($request->all());
         return redirect("DatosPersonales");
     }
 

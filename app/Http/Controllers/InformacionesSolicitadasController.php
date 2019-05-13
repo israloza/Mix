@@ -71,9 +71,9 @@ class InformacionesSolicitadasController extends Controller
      * @param  \App\InformacionesSolicitadas  $informacionesSolicitadas
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, InformacionesSolicitadas $InformacionSolicitada)
+    public function update(Request $request, InformacionesSolicitadas $InformacionesSolicitada)
     {
-        $InformacionSolicitada->update($request->all());
+        $InformacionesSolicitada->update($request->all());
         return redirect("InformacionesSolicitadas");
     }
 

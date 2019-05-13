@@ -70,10 +70,10 @@ class PersonasMoralesController extends Controller
      * @param  \App\PersonasMorales  $personasMorales
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PersonasMorales $PersonasMoral)
+    public function update(Request $request, PersonasMorales $PersonasMorale)
     {
 
-        $PersonasMoral->update($request->all());
+        $PersonasMorale->update($request->all());
         return redirect("PersonasMorales");
 
     }

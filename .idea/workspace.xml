@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86ecd146-20f4-44fe-9171-ad82ae587f19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Logins/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/ModalidadesOtrosTipos/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/SujetosObligados/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DatosPersonalesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DatosPersonalesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InformacionesSolicitadasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InformacionesSolicitadasController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModalidadesEntregaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ModalidadesEntregaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModalidadesOtrosTiposController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ModalidadesOtrosTiposController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SujetosObligadosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SujetosObligadosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Logins/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Logins/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Logins/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Logins/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ModalidadesOtrosTipos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ModalidadesOtrosTipos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/PersonasFisicas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/PersonasFisicas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/SujetosObligados/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/SujetosObligados/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonasMoralesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonasMoralesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/DatosPersonales/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/DatosPersonales/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +21,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ModalidadesOtrosTiposController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="76" column="88" selection-start-line="76" selection-start-column="88" selection-end-line="76" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/Administradores/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -63,32 +75,32 @@
         <option value="$PROJECT_DIR$/resources/views/PersonasMorales/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/PersonasMorales/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PersonasFisicasController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PersonasMoralesController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DatosPersonalesController.php" />
         <option value="$PROJECT_DIR$/resources/views/Municipios/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MunicipiosController.php" />
         <option value="$PROJECT_DIR$/resources/views/DatosPersonales/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/DatosPersonales/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/ModalidadesEntrega.php" />
         <option value="$PROJECT_DIR$/resources/views/Municipios/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ModalidadesEntrega/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ModalidadesEntrega/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ModalidadesEntregaController.php" />
         <option value="$PROJECT_DIR$/resources/views/InformacionesSolicitadas/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/InformacionesSolicitadas/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/InformacionesSolicitadasController.php" />
         <option value="$PROJECT_DIR$/resources/views/PersonasFisicas/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/SujetosObligados/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/SujetosObligados/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SujetosObligadosController.php" />
         <option value="$PROJECT_DIR$/resources/views/ModalidadesOtrosTipos/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ModalidadesOtrosTipos/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ModalidadesOtrosTiposController.php" />
         <option value="$PROJECT_DIR$/resources/views/Logins/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Logins/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Logins/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LoginsController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PersonasMoralesController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/InformacionesSolicitadasController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ModalidadesEntregaController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DatosPersonalesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/DatosPersonales/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ModalidadesOtrosTiposController.php" />
       </list>
     </option>
   </component>
@@ -229,21 +241,21 @@
               <item name="Protected-File" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Logins" type="462c0819:PsiDirectoryNode" />
+              <item name="Administradores" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Protected-File" type="b2602c69:ProjectViewProjectNode" />
               <item name="Protected-File" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Municipios" type="462c0819:PsiDirectoryNode" />
+              <item name="DatosPersonales" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Protected-File" type="b2602c69:ProjectViewProjectNode" />
               <item name="Protected-File" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="PersonasFisicas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Protected-File" type="b2602c69:ProjectViewProjectNode" />
@@ -286,11 +298,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.bootstrap">
+    <configuration name="bootstrap" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/bootstrap" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.bootstrap" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -312,17 +333,19 @@
       <workItem from="1557405524444" duration="627000" />
       <workItem from="1557406305074" duration="115000" />
       <workItem from="1557416872103" duration="3327000" />
+      <workItem from="1557448397085" duration="248000" />
+      <workItem from="1557756607501" duration="2252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37660000" />
+    <option name="totallyTimeSpent" value="40160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3093477" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3187626" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -462,20 +485,6 @@
     <entry file="file://$PROJECT_DIR$/app/PersonasMorales.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PersonasMoralesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DatosPersonalesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/PersonasFisicas/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -497,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/DatosPersonales/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Template/template.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -515,13 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Administradores/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -564,20 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InformacionesSolicitadasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/PersonasFisicas/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/SujetosObligados/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -605,13 +586,6 @@
         <state relative-caret-position="390">
           <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
           <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ModalidadesOtrosTiposController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -658,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ModalidadesEntregaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="88" column="44" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="601">
@@ -679,10 +646,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InformacionesSolicitadasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PersonasMoralesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ModalidadesEntregaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/PersonasFisicas/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/DatosPersonales/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <caret line="14" column="102" lean-forward="true" selection-start-line="14" selection-start-column="102" selection-end-line="14" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DatosPersonalesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ModalidadesOtrosTiposController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="76" column="88" selection-start-line="76" selection-start-column="88" selection-end-line="76" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Administradores/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
         </state>
       </provider>
     </entry>

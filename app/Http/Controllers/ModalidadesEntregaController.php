@@ -72,9 +72,9 @@ class ModalidadesEntregaController extends Controller
      * @param  \App\ModalidadesEntrega  $modalidadesEntrega
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ModalidadesEntrega $ModalidadEntrega)
+    public function update(Request $request, ModalidadesEntrega $ModalidadesEntrega)
     {
-        $ModalidadEntrega->update($request->all());
+        $ModalidadesEntrega->update($request->all());
         return redirect("ModalidadesEntrega");
     }
 

@@ -74,9 +74,9 @@ class ModalidadesOtrosTiposController extends Controller
      * @param  \App\ModalidadesOtrosTipos  $modalidadesOtrosTipos
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ModalidadesOtrosTipos $ModalidadesOtroTipo)
+    public function update(Request $request, ModalidadesOtrosTipos $ModalidadesOtrosTipo)
     {
-        $ModalidadesOtroTipo->update($request->all());
+        $ModalidadesOtrosTipo->update($request->all());
         return redirect("ModalidadesOtrosTipos");
     }
 
