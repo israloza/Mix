@@ -28,11 +28,56 @@
            <!-- <button id="boton" href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-minus-circle"></i></button> -->
             <div id="boton" class="col-12"><a class="btn-secondary" href="{{url("Administradores")}}">Administrador</a></div>
         </div>
+            <ul class="nav justify-content-center">
+                @guest
+            <li class="nav-item">
+                <a class="nav-link text-black-50" href="{{ route('login') }}">{{ __('Login') }}</a>
+            </li>
+        @if(Route::has('register'))
+            <li class="nav-item">
+                <a class="nav-link text-black-50" href="{{ route('register') }}">{{ __('Register') }}</a>
+            </li>
+         @endif
+        @else
+            @if(Auth::user()->tipo_empleado==0 || Auth::user()->tipo_empleado==1)
+                        <li class="nav-item"><a href="{{url("ModalidadesEntrega")}}" class="nav-link text-black-50">Modalidad Entrega</a></li>
+                        <li class="nav-item"><a href="{{url("DatosPersonales")}}" class="nav-link text-black-50">Datos Personales</a></li>
+                        <li class="nav-item"><a href="{{url("ModalidadesOtrosTipos")}}" class="nav-link text-black-50">Modalidades otros tipos</a></li>
+          @endif()
+            @if(Auth::user()->tipo_empleado==2)
+                    <li class="nav-item"><a href="{{url("PersonasFisicas")}}" class="nav-link text-right text-black-50">Personas Fisicas</a></li>
+                    <li class="nav-item"><a href="{{url("PersonasMorales")}}" class="nav-link text-black-50">Personas Morales</a></li>
+                    <li class="nav-item"><a href="{{url("Municipios")}}" class="nav-link text-black-50">Municipios</a></li>
+                    <li class="nav-item"><a href="{{url("Personas")}}" class="nav-link text-black-50">Login</a></li>
+                    <li class="nav-item"><a href="{{url("InformacionesSolicitadas")}}" class="nav-link text-black-50">Informacion Solicitada</a></li>
+                    <li class="nav-item"><a href="{{url("SujetosObligados")}}" class="nav-link text-black-50">Sujetos Obligados</a></li>
+            @endif()
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle text-black-50  " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }} <span class="caret"></span>
+                    </a>
 
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
+                @endguest
+            </ul>
     </header>
     <section class="container">
         @include('flash::message')
         @yield("content")
+        @guest
+            <h1 class="bg-danger text-white">No has iniciado sesion</h1>
+        @endguest
     </section>
 
     <!--<footer id="pie" class="col-12">

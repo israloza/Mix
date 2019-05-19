@@ -43,8 +43,7 @@ class LoginsController extends Controller
     {
         //
         $Login=array('nombre'=>$request->nombre,
-            'ap'=>$request->ap,'am'=>$request->am,
-            'correo'=>$request->correo,'contraseña'=>$request->contraseña);
+            'ap'=>$request->ap,'am'=>$request->am);
         Logins::create($Login);
         return redirect("Logins");
     }

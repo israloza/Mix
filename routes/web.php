@@ -73,3 +73,6 @@ Route::get('DatosPersonales/{id}/destroy',[
     'uses' => 'DatosPersonalesController@destroy',
     'as' => 'DatosPersonales.destroy'
 ]);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
