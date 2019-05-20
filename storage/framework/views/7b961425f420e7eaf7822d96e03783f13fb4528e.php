@@ -8,6 +8,7 @@
     <link rel="stylesheet" href=<?php echo e(asset("css/app.css")); ?> type="text/css">
     <link rel="stylesheet" href=<?php echo e(asset("css/Estilos.css")); ?> type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="<?php echo e(asset('js/app.js')); ?>" defer></script>
     <title>Protected File</title><!--titulo de la pestaña-->
     <title><?php echo $__env->yieldContent("title"); ?></title>
 </head>
