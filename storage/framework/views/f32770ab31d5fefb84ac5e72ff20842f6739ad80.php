@@ -20,7 +20,7 @@
                         <td class="table-success"><?php echo e($Persona->nombre); ?></td>
                         <td class="table-success"><?php echo e($Persona->ap); ?></td>
                         <td class="table-success"><?php echo e($Persona->am); ?></td>
-                        <td class="table-success"><?php echo e($Persona->id_user); ?></td>
+                        <td><?php echo e(isset($Persona->getUser[0])?$Persona->getUser[0]->name:""); ?></td>
                          </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>

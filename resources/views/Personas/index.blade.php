@@ -21,7 +21,7 @@
                         <td class="table-success">{{$Persona->nombre}}</td>
                         <td class="table-success">{{$Persona->ap}}</td>
                         <td class="table-success">{{$Persona->am}}</td>
-                        <td class="table-success">{{$Persona->id_user}}</td>
+                        <td>{{isset($Persona->getUser[0])?$Persona->getUser[0]->name:""}}</td>
                          </tr>
                 @endforeach
                 </tbody>

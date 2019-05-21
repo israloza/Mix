@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Personas;
+use App\TiposEmpleados;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -70,10 +71,9 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'id_tipo_empleado'=>0
+            'id_tipo_empleado'=>2
 
         ]);
-            //dd("oki");
 
        Personas::create(
             ['nombre'=>$data['nombre'],
@@ -81,7 +81,8 @@ class RegisterController extends Controller
                 'am'=>$data['am'],
                 'id_user'=>$usuario->id_user]);
        return $usuario;//regresar interfaz usuario.
-//dd($hola);
+
+
 
     }
 }
