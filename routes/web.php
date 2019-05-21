@@ -31,12 +31,6 @@ Route::get('PersonasMorales/{id}/destroy',[
     'as' => 'PersonasMorales.destroy'
 ]);
 
-Route::resource('Logins','LoginsController');
-Route::get('Logins/{id}/destroy',[
-    'uses' => 'LoginsController@destroy',
-    'as' => 'Logins.destroy'
-]);
-
 
 Route::resource('ModalidadesOtrosTipos','ModalidadesOtrosTiposController');
 Route::get('ModalidadesOtrosTipos/{id}/destroy',[
@@ -73,6 +67,19 @@ Route::get('DatosPersonales/{id}/destroy',[
     'uses' => 'DatosPersonalesController@destroy',
     'as' => 'DatosPersonales.destroy'
 ]);
+
+Route::resource('Personas','PersonasController');
+Route::get('Personas/{id}/destroy',[
+    'uses' => 'PersonasController@destroy',
+    'as' => 'Personas.destroy'
+]);
+
+Route::resource('TiposEmpleados','TiposEmpleadosController');
+Route::get('TiposEmpleados/{id}/destroy',[
+    'uses' => 'TiposEmpleadosController@destroy',
+    'as' => 'TiposEmpleados.destroy'
+]);
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

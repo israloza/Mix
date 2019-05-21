@@ -15,6 +15,8 @@
             <li class="nav-item"><a href="{{url("ModalidadesEntrega")}}" class="nav-link text-black-50">Modalidad Entrega</a></li>
             <li class="nav-item"><a href="{{url("DatosPersonales")}}" class="nav-link text-black-50">Datos Personales</a></li>
             <li class="nav-item"><a href="{{url("ModalidadesOtrosTipos")}}" class="nav-link text-black-50">Modalidades otros tipos</a></li>
+            <li class="nav-item"><a href="{{url("TiposEmpleados")}}" class="nav-link text-black-50">Tipos Empleados</a></li>
+
         </ul>
         </div>
     </div>

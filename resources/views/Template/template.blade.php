@@ -40,18 +40,19 @@
             </li>
          @endif
         @else
-            @if(Auth::user()->tipo_empleado==0 || Auth::user()->tipo_empleado==1)
+            @if(Auth::user()->id_tipo_empleado==0 || Auth::user()->tipo_empleado==1)
                         <li class="nav-item"><a href="{{url("ModalidadesEntrega")}}" class="nav-link text-black-50">Modalidad Entrega</a></li>
                         <li class="nav-item"><a href="{{url("DatosPersonales")}}" class="nav-link text-black-50">Datos Personales</a></li>
                         <li class="nav-item"><a href="{{url("ModalidadesOtrosTipos")}}" class="nav-link text-black-50">Modalidades otros tipos</a></li>
           @endif()
-            @if(Auth::user()->tipo_empleado==2)
+            @if(Auth::user()->id_tipo_empleado==2)
                     <li class="nav-item"><a href="{{url("PersonasFisicas")}}" class="nav-link text-right text-black-50">Personas Fisicas</a></li>
                     <li class="nav-item"><a href="{{url("PersonasMorales")}}" class="nav-link text-black-50">Personas Morales</a></li>
                     <li class="nav-item"><a href="{{url("Municipios")}}" class="nav-link text-black-50">Municipios</a></li>
-                    <li class="nav-item"><a href="{{url("Personas")}}" class="nav-link text-black-50">Login</a></li>
+                    <li class="nav-item"><a href="{{url("Personas")}}" class="nav-link text-black-50">Personas</a></li>
                     <li class="nav-item"><a href="{{url("InformacionesSolicitadas")}}" class="nav-link text-black-50">Informacion Solicitada</a></li>
                     <li class="nav-item"><a href="{{url("SujetosObligados")}}" class="nav-link text-black-50">Sujetos Obligados</a></li>
+                    <li class="nav-item"><a href="{{url("TiposEmpleados")}}" class="nav-link text-black-50">Tipos Empleados</a></li>
             @endif()
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle text-black-50  " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

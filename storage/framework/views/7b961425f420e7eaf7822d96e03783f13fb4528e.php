@@ -40,18 +40,19 @@
             </li>
          <?php endif; ?>
         <?php else: ?>
-            <?php if(Auth::user()->tipo_empleado==0 || Auth::user()->tipo_empleado==1): ?>
+            <?php if(Auth::user()->id_tipo_empleado==0 || Auth::user()->tipo_empleado==1): ?>
                         <li class="nav-item"><a href="<?php echo e(url("ModalidadesEntrega")); ?>" class="nav-link text-black-50">Modalidad Entrega</a></li>
                         <li class="nav-item"><a href="<?php echo e(url("DatosPersonales")); ?>" class="nav-link text-black-50">Datos Personales</a></li>
                         <li class="nav-item"><a href="<?php echo e(url("ModalidadesOtrosTipos")); ?>" class="nav-link text-black-50">Modalidades otros tipos</a></li>
           <?php endif; ?>
-            <?php if(Auth::user()->tipo_empleado==2): ?>
+            <?php if(Auth::user()->id_tipo_empleado==2): ?>
                     <li class="nav-item"><a href="<?php echo e(url("PersonasFisicas")); ?>" class="nav-link text-right text-black-50">Personas Fisicas</a></li>
                     <li class="nav-item"><a href="<?php echo e(url("PersonasMorales")); ?>" class="nav-link text-black-50">Personas Morales</a></li>
                     <li class="nav-item"><a href="<?php echo e(url("Municipios")); ?>" class="nav-link text-black-50">Municipios</a></li>
-                    <li class="nav-item"><a href="<?php echo e(url("Personas")); ?>" class="nav-link text-black-50">Login</a></li>
+                    <li class="nav-item"><a href="<?php echo e(url("Personas")); ?>" class="nav-link text-black-50">Personas</a></li>
                     <li class="nav-item"><a href="<?php echo e(url("InformacionesSolicitadas")); ?>" class="nav-link text-black-50">Informacion Solicitada</a></li>
                     <li class="nav-item"><a href="<?php echo e(url("SujetosObligados")); ?>" class="nav-link text-black-50">Sujetos Obligados</a></li>
+                    <li class="nav-item"><a href="<?php echo e(url("TiposEmpleados")); ?>" class="nav-link text-black-50">Tipos Empleados</a></li>
             <?php endif; ?>
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle text-black-50  " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

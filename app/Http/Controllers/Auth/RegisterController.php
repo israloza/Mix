@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Logins;
+use App\Personas;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -65,17 +65,23 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $login=Logins::create(
-            ['nombre'=>$data['nombre'],
-                'ap'=>$data['ap'],
-                'am'=>$data['am']]);
 
-        return User::create([
+            $usuario=User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'id_persona'=>$login->id_persona,
-            'id_tipo_empleado'=>2
+            'id_tipo_empleado'=>0
+
         ]);
+            //dd("oki");
+
+       Personas::create(
+            ['nombre'=>$data['nombre'],
+                'ap'=>$data['ap'],
+                'am'=>$data['am'],
+                'id_user'=>$usuario->id_user]);
+       return $usuario;//regresar interfaz usuario.
+//dd($hola);
+
     }
 }

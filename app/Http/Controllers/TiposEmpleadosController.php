@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Logins;
+use App\SujetosObligados;
+use App\TiposEmpleados;
 use Illuminate\Http\Request;
 
-class LoginsController extends Controller
+class TiposEmpleadosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +16,8 @@ class LoginsController extends Controller
      */
     public function index()
     {
-        //
-        $Logins=Logins::orderby('id_login')->get();
-        return view("Logins.index",compact('Logins'));
-
-
+        $TiposEmpleados=TiposEmpleados::orderby('id_tipo_empleado')->get();
+        return view("TiposEmpleados.index",compact('TiposEmpleados'));
     }
 
     /**
@@ -28,9 +27,7 @@ class LoginsController extends Controller
      */
     public function create()
     {
-        //
-        return view("Logins.create");
-
+        return view("TiposEmpleados.create");
     }
 
     /**
@@ -42,19 +39,18 @@ class LoginsController extends Controller
     public function store(Request $request)
     {
         //
-        $Login=array('nombre'=>$request->nombre,
-            'ap'=>$request->ap,'am'=>$request->am);
-        Logins::create($Login);
-        return redirect("Logins");
+        $TiposEmpleado=array('descripcion'=>$request->descripcion);
+        TiposEmpleados::create($TiposEmpleado);
+        return redirect("TiposEmpleados");
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Logins  $logins
+     * @param  \App\TiposEmpleados  $tiposEmpleados
      * @return \Illuminate\Http\Response
      */
-    public function show(Logins $logins)
+    public function show(TiposEmpleados $tiposEmpleados)
     {
         //
     }
@@ -62,38 +58,38 @@ class LoginsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Logins  $logins
+     * @param  \App\TiposEmpleados  $tiposEmpleados
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $Login=Logins::find($id);
-        return view('Logins.edit', compact('Login'));
+        $TipoEmpleado=TiposEmpleados::find($id);
+        return view('TiposEmpleados.edit', compact('TipoEmpleado'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Logins  $logins
+     * @param  \App\TiposEmpleados  $tiposEmpleados
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Logins $Login)
+    public function update(Request $request, TiposEmpleados $TiposEmpleado)
     {
-        $Login->update($request->all());
-        return redirect("Logins");
+        $TiposEmpleado->update($request->all());
+        return redirect("TiposEmpleados");
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Logins  $logins
+     * @param  \App\TiposEmpleados  $tiposEmpleados
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $Login=Logins::find($id);
-        $Login->delete();
-        return redirect("Logins");
+        $TiposEmpleado=TiposEmpleados::find($id);
+        $TiposEmpleado->delete();
+        return redirect("TiposEmpleados");
     }
 }
