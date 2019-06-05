@@ -79,6 +79,7 @@ Route::get('TiposEmpleados/{id}/destroy',[
     'uses' => 'TiposEmpleadosController@destroy',
     'as' => 'TiposEmpleados.destroy'
 ]);
+Route::resource('Solicitudes','SolicitudesController');
 
 Auth::routes();
 
