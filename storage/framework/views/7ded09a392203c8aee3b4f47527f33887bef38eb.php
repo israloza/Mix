@@ -18,7 +18,6 @@
                     <input type="text" class="form-control" name="am_rep" placeholder="Apellido Materno">
                     <label for="exampleInputPassword4">Nombre</label>
                     <input type="text" class="form-control" name="nom_rep" placeholder="Nombre">
-
                 </div>
                 <button type="submit" class="btn-primary">Aceptar</button>
             </form>
@@ -26,4 +25,5 @@
     </div>
 
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('Template.template', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ara/Documentos/Proyecto/Protected-File/resources/views/PersonasMorales/create.blade.php ENDPATH**/ ?>
