@@ -1,9 +1,9 @@
 @extends('Administradores.index')
 @section('title','Datos Personales')
 @section('content')
-    <h1 class="text-black-50 text-center">Datos Personales</h1>
+    <h1 class="btn-success text-black-50 text-center">Datos Personales</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("DatosPersonales/create")}}">Agregar</a></div>
+        <div class="col"><a class="btn-success" href="{{url("DatosPersonales/create")}}">Agregar</a></div>
     </div>
     <div class="row">
         <div class="col">

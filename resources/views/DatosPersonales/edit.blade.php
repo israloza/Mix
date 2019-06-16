@@ -1,9 +1,9 @@
 @extends('Template.template')
 @section('title','Editar Datos Personales')
 @section('content')
-    <h1 class="bg-primary text-dark text-left">Editar Datos Personales {{$DatosPersonal->descripcion}}</h1>
+    <h1 class="bg-success text-dark text-left">Editar Datos Personales {{$DatosPersonal->descripcion}}</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("DatosPersonales")}}">Volver</a></div>
+        <div class="col"><a class="btn-success" href="{{url("DatosPersonales")}}">Volver</a></div>
     </div>
     <div class="row">
         <div class="col-4 offset-4">
@@ -16,7 +16,7 @@
 
 
                 </div>
-                <button type="submit" class="btn-primary">Editar</button>
+                <button type="submit" class="btn-success">Editar</button>
             </form>
         </div>
     </div>

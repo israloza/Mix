@@ -1,9 +1,9 @@
 @extends('Template.template')
 @section('title','Modalidades Otros Tipos')
 @section('content')
-    <h1 class="bg-primary text-white text-center">Modalidades Otros Tipos</h1>
+    <h1 class="bg-success text-white text-center">Modalidades Otros Tipos</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("ModalidadesOtrosTipos/create")}}">Agregar</a></div>
+        <div class="col"><a class="btn-success" href="{{url("ModalidadesOtrosTipos/create")}}">Agregar</a></div>
     </div>
     <div class="row">
         <div class="col">

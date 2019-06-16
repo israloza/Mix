@@ -1,9 +1,9 @@
 @extends('Template.template')
 @section('title','Sujetos Obligados')
 @section('content')
-    <h1 class="bg-primary text-white text-center">Sujetos Obligados</h1>
+    <h1 class="bg-success text-white text-center">Sujetos Obligados</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("SujetosObligados/create")}}">Agregar</a></div>
+        <div class="col"><a class="btn-success" href="{{url("SujetosObligados/create")}}">Agregar</a></div>
     </div>
     <div class="row">
         <div class="col">

@@ -1,9 +1,9 @@
 @extends('Administradores.index')
 @section('title','Personas Fisicas')
 @section('content')
-    <h1 class="text-black-50 text-center">Personas Fisicas</h1>
+    <h1 class="btn-success text-black-50 text-center">Personas Fisicas</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("PersonasFisicas/create")}}">Agregar</a></div>
+        <div class="col"><a class="btn-success" href="{{url("PersonasFisicas/create")}}">Agregar</a></div>
     </div>
     <div class="row">
         <div class="col">

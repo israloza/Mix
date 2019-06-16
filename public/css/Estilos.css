@@ -79,11 +79,16 @@
     top: 20px;
 }
 
-#derechos{
+#derechos {
     text-align: center;
     font-family: "Open Sans- Sans SErif";
     background-color: window;
     color: black;
     font-size: 13px;
+}
+#cargar{
+   left: 350px;
+    position: center;
 
 }
+

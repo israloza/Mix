@@ -25,6 +25,8 @@ Route::get('PersonasFisicas/{id}/destroy',[
 
 Route::resource('Administradores','AdminstradoresController');
 
+Route::resource('DocumentosOriginales','DocumentosOriginalesController');
+
 Route::resource('PersonasMorales','PersonasMoralesController');
 Route::get('PersonasMorales/{id}/destroy',[
     'uses' => 'PersonasMoralesController@destroy',

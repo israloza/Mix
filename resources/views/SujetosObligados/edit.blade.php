@@ -1,9 +1,9 @@
 @extends('Template.template')
 @section('title','Editar Sujetos Obligados ')
 @section('content')
-    <h1 class="bg-primary text-dark text-left">Editar Sujetos Obligados {{$SujetosObligado->lugar}}</h1>
+    <h1 class="bg-success text-dark text-left">Editar Sujetos Obligados {{$SujetosObligado->lugar}}</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("SujetosObligados")}}">Volver</a></div>
+        <div class="col"><a class="btn-success" href="{{url("SujetosObligados")}}">Volver</a></div>
     </div>
     <div class="row">
         <div class="col-4 offset-4">
@@ -21,7 +21,7 @@
                     <input type="text" class="form-control" name="hora" value='{{$SujetosObligado->Hora}}'>
 
                 </div>
-                <button type="submit" class="btn-primary">Editar</button>
+                <button type="submit" class="btn-success">Editar</button>
             </form>
         </div>
     </div>

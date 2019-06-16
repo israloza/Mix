@@ -2,9 +2,9 @@
 @section('title','Añadir Personas Físicas')
 @section('content')
 
-    <h1 class="bg-primary text-dark text-left">Añadir Personas Fisicas</h1>
+    <h1 class="bg-success text-dark text-left">Añadir Personas Fisicas</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("PersonasFisicas")}}">Volver</a></div>
+        <div class="col"><a class="btn-success" href="{{url("PersonasFisicas")}}">Volver</a></div>
     </div>
     <div class="row">
         <div class="col-4 offset-4">
@@ -19,7 +19,7 @@
                     <input type="text" class="form-control" name="nombre" placeholder="Nombre">
 
                 </div>
-                <button type="submit" class="btn-primary">Aceptar</button>
+                <button type="submit" class="btn-success">Aceptar</button>
             </form>
         </div>
     </div>

@@ -2,7 +2,7 @@
 @section('title','Administrador')
 @section('content')
 <header>
-    <h1 class="bg-primary text-white text-center">Administrador</h1>
+    <h1 class="bg-success text-white text-center">Administrador</h1>
     <div class="row">
         <div class="col-12">
         <ul class="nav justify-content-center">
@@ -16,6 +16,7 @@
             <li class="nav-item"><a href="{{url("DatosPersonales")}}" class="nav-link text-black-50">Datos Personales</a></li>
             <li class="nav-item"><a href="{{url("ModalidadesOtrosTipos")}}" class="nav-link text-black-50">Modalidades otros tipos</a></li>
             <li class="nav-item"><a href="{{url("TiposEmpleados")}}" class="nav-link text-black-50">Tipos Empleados</a></li>
+            <li class="nav-item"><a href="{{url("DocumentosOriginales")}}" class="nav-link text-black-50">Docuentos Originales</a></li>
 
         </ul>
         </div>

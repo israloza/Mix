@@ -2,9 +2,9 @@
 @section('title','Añadir Modalidades Otros Tipos')
 @section('content')
 
-    <h1 class="bg-primary text-dark text-left">Añadir Modalidades Otros Tipos</h1>
+    <h1 class="btn-success text-dark text-left">Añadir Modalidades Otros Tipos</h1>
     <div class="row">
-        <div class="col"><a class="btn-primary" href="{{url("ModalidadesOtrosTipos")}}">Volver</a></div>
+        <div class="col"><a class="btn-success" href="{{url("ModalidadesOtrosTipos")}}">Volver</a></div>
     </div>
     <div class="row">
         <div class="col-4 offset-4">
@@ -16,7 +16,7 @@
 
 
                 </div>
-                <button type="submit" class="btn-primary">Aceptar</button>
+                <button type="submit" class="btn-success">Aceptar</button>
             </form>
         </div>
     </div>
