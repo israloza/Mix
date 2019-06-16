@@ -92,3 +92,121 @@
 
 }
 
+<<<<<<< HEAD
+=======
+}
+
+
+
+/*DISEÑO DE LA SOLICITUD DE INFORMACIÓN*/
+#borde1
+{
+    border: 1.5px solid black;
+    background: #CCCCCC;
+}
+#borde2
+{
+    border: 1.5px solid black;
+
+}
+.firma
+{
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.recepcion
+  {
+    border-bottom: black;
+    background:#CCCCCC;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+
+  }
+.datosol
+{
+    background:#CCCCCC;
+    color: black;
+    text-align: center;
+}
+.datosopc
+{
+    background:#CCCCCC;
+    color: black;
+    text-align: center;
+}
+.btn-success
+{
+    margin:10px;
+    padding: 10px 0px;
+    font-size: 1.20em;
+    width: 180px;
+    color: whitesmoke;
+}
+.btn-success-1
+{
+    background:#2fa360;
+    margin:0px;
+    padding: 10px 0px;
+    font-size: 1.20em;
+    width: 150px;
+    color: whitesmoke;
+}
+#bordeesquinita
+{
+    border: 1.5px solid black;
+    background:#CCCCCC;
+    margin:0px;
+    padding: 0px 0px;
+    font-size: 1.20em;
+    width: 150px;
+    color: black;
+    text-align: center;
+}
+#bordeesquinitasujobli
+{
+    border: 1.5px solid black;
+    background:#CCCCCC;
+    margin:0px;
+    padding: 0px 0px;
+    font-size: 1.20em;
+    width: 395px;
+    color: black;
+    text-align: center;
+}
+#bordeesquinitadescripclara
+{
+    border: 1.5px solid black;
+    background:#CCCCCC;
+    margin:0px;
+    padding: 0px 0px;
+    font-size: 1.20em;
+    width: 500px;
+    color: black;
+    text-align: center;
+}
+#bordeesquinitacualquier
+{
+    border: 1.5px solid black;
+    background:#CCCCCC;
+    margin:0px;
+    padding: 0px 0px;
+    font-size: 1.20em;
+    width: 540px;
+    color: black;
+    text-align: center;
+}
+#bordeesquinitamodent
+{
+    border: 1.5px solid black;
+    background:#CCCCCC;
+    margin:0px;
+    padding: 0px 0px;
+    font-size: 1.20em;
+    width: 190px;
+    color: black;
+    text-align: center;
+}
+>>>>>>> df43c1232533d7f4e02c0205603a4054deab4ab5

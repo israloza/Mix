@@ -8,15 +8,21 @@
         <div class="col">
             <table class="table">
                 <thead>
-                <th>Id Municipio</th>
-                <th>Municipio</th>
-
+                <th>Descripción</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
                 </thead>
                 <tbody>
                 <?php $__currentLoopData = $Municipios; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $Municipio): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <tr>
-                        <td><?php echo e($Municipio->id_municipios); ?></td>
-                        <td><?php echo e($Municipio->descripcion); ?></td>
+                        <td class="table-success"><?php echo e($Municipio->descripcion); ?></td>
+
+                        <td class="table-success">
+                            <a href="<?php echo e(route('Municipios.edit',$Municipio->id_municipios)); ?>" onclick="return confirm('¿Seguro que deseas modificarlo?')" class="btn btn-outline-primary" name="actualizar"><i  class="fas fa-pen-alt"></i></a>
+                        </td>
+                        <td class="table-success">
+                            <a href="<?php echo e(route('Municipios.destroy',$Municipio->id_municipios)); ?>" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-trash"></i></a>
+                        </td>
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>

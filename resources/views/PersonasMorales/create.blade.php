@@ -19,7 +19,6 @@
                     <input type="text" class="form-control" name="am_rep" placeholder="Apellido Materno">
                     <label for="exampleInputPassword4">Nombre</label>
                     <input type="text" class="form-control" name="nom_rep" placeholder="Nombre">
-
                 </div>
                 <button type="submit" class="btn-success">Aceptar</button>
             </form>

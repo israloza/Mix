@@ -13,23 +13,21 @@
     <title><?php echo $__env->yieldContent("title"); ?></title>
 </head>
 <body>
-
-    <header id="encabezado"><!--encabezado-->
-
-        <div class="col-3" id="logos">
-            <img  id="logo" src=<?php echo e(asset("Imagenes/tesvb.png")); ?> alt="" ><!--Usar imagenes-->
-        </div>
-
-        <div class="col-6" id="titulos">
-            <h6 class="text-center " id="titulo_encabezado">Plataforma para la protección y gestión de datos personales de servidores publicos e instituciones educativa </h6><!--Titulo del encabezado-->
-        </div>
-
-        <div id="logins" class="col-1">
-            <img  id="user" src=<?php echo e(asset("Imagenes/login.png")); ?> alt="" ><!--Usar imagenes-->
+    <header class="fixed-top bg-success">
+        <div class="row">
+            <div class="col-md-3">
+                <img  id="logo" class="img-fluid" src=<?php echo e(asset("Imagenes/tesvb.png")); ?> alt="" ><!--Usar imagenes-->
+            </div>
+            <div class="col-md-7">
+                <br><br>
+                <h6 class="text-center " id="titulo_encabezado">Plataforma para la protección y gestión de datos personales de servidores publicos e instituciones educativa </h6><!--Titulo del encabezado-->
+            </div>
+            <div class="col-md-2 text-center">
+                <img  id="user" src=<?php echo e(asset("Imagenes/login.png")); ?> alt="" ><!--Usar imagenes-->
            <!-- <button id="boton" href="" class="btn btn-outline-danger" name="eliminar"><i class="fas fa-minus-circle"></i></button> -->
-            <div id="boton" class="col-12"><a class="btn-secondary" href="<?php echo e(url("Administradores")); ?>">Administrador</a></div>
+            <div id="boton" class="col-12"><a class="btn-secondary" href="<?php echo e(url("Administradores")); ?>">Administrador</a></div></div>
         </div>
-            <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center">
                 <?php if(auth()->guard()->guest()): ?>
             <li class="nav-item">
                 <a class="nav-link text-black-50" href="<?php echo e(route('login')); ?>"><?php echo e(__('Login')); ?></a>
@@ -41,7 +39,7 @@
          <?php endif; ?>
         <?php else: ?>
             <?php if(Auth::user()->id_tipo_empleado==0 || Auth::user()->tipo_empleado==1): ?>
-                        <li class="nav-item"><a href="<?php echo e(url("ModalidadesEntrega")); ?>" class="nav-link text-black-50">Modalidad Entrega</a></li>
+                        <li class="nav-item"><a href="<?php echo e(url("Solicitudes")); ?>" class="nav-link text-black-50">Solicitudes</a></li>
                         <li class="nav-item"><a href="<?php echo e(url("DatosPersonales")); ?>" class="nav-link text-black-50">Datos Personales</a></li>
                         <li class="nav-item"><a href="<?php echo e(url("ModalidadesOtrosTipos")); ?>" class="nav-link text-black-50">Modalidades otros tipos</a></li>
           <?php endif; ?>
@@ -74,8 +72,13 @@
                 </li>
                 <?php endif; ?>
             </ul>
-    </header>
-    <section class="container">
+</header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="container my-5">
         <?php echo $__env->make('flash::message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php echo $__env->yieldContent("content"); ?>
         <?php if(auth()->guard()->guest()): ?>
@@ -109,4 +112,5 @@
     </footer>-->
 </body>
 </html>
+
 <?php /**PATH /var/www/html/Laravel/Protected_File/resources/views/Template/template.blade.php ENDPATH**/ ?>
