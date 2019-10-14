@@ -1763,6 +1763,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1837,6 +1838,13 @@ __webpack_require__.r(__webpack_exports__);
           _this4.notas = res.data;
         });
       });
+    },
+    cancelarEdicion: function cancelarEdicion() {
+      this.editarActivo = false;
+      this.nota = {
+        nombre: '',
+        descripcion: ''
+      };
     }
   }
 });
@@ -37245,6 +37253,20 @@ var render = function() {
               "button",
               { staticClass: "btn btn-success", attrs: { type: "submit" } },
               [_vm._v("Guardar")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-danger",
+                attrs: { type: "submit" },
+                on: {
+                  click: function($event) {
+                    return _vm.cancelarEdicion()
+                  }
+                }
+              },
+              [_vm._v("Cancelar")]
             )
           ]
         )
